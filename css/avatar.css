@@ -1,0 +1,281 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 29, 2014, 8:21:37 AM
+    Author     : RashFlash
+*/
+
+
+#ajaxOverlay
+{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    background-color: #000000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.mainWrapper{
+    position: relative;    
+    width: 950px;    
+    height:600px;        
+    left: 50%;
+    margin-left: -475px;
+}
+
+#genderLayout {
+text-align: center;
+}
+.topHeading{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 40px 0 0;
+}
+
+.headingText{
+    color: #2E92A0;
+    font-size: 36px;    
+font-family: 'Luckiest Guy', cursive;
+}
+
+.optionArea{
+    position: relative;
+}
+
+.optionList{
+    position: relative; 
+}
+
+.optionGender{
+    cursor: pointer;
+    margin: 0 20px;
+    border: 2px solid #000000;
+background: #fff;
+}
+
+.optionGender:hover{
+    border: 2px solid #e11a51;
+}
+
+#avatarLayout{
+    position: relative;
+    top: 20px;
+}
+
+.canvasArea{
+    position: relative;
+    float: left;
+    margin-left: 25px;
+}
+
+.accessoriesArea {
+    background-color: rgba(0,0,0,.1);
+    padding:0 20px;
+    height: 550px;
+}
+.avatarArea{
+    background-color: #ffffff;
+    width: 500px;  
+    height: 550px;
+
+}
+.shapesArea{
+    width: 240px; 
+    height: 550px;
+    
+}
+
+.selectedSection{
+    background-color: #CCCCCC;
+    border-radius: 8px;
+}
+.shapes_images{
+    position: relative;
+    border: 2px solid #e11a51;
+    margin-left: 3px;
+    cursor: pointer;
+background: #fff;
+}
+
+.accessories{
+
+}
+
+.arrowLeft,
+.arrowRight
+{
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.arrowLeft:hover{
+    border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 	
+	border-right:15px solid #ffffff; 
+}
+
+
+.arrowLeft {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 	
+	border-right:15px solid #e11a51; 
+}
+.arrowRight {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;	
+	border-left: 15px solid #e11a51;
+}
+
+.arrowRight:hover{
+    border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;	
+	border-left: 15px solid #ffffff;
+}
+
+.avatar_image{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -160px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+.styleBtn, .resetBtn, .finishBtn, .downloadBtn {
+    font-family: "Luckiest Guy",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #FABA2D;
+    display: inline-block;
+    color: #FFF;
+    padding: 14px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 999;
+    border-bottom: 5px solid #FAAF40;
+-webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+
+.styleBtn:hover, .resetBtn:hover, .finishBtn:hover, .downloadBtn:hover {
+    font-family: "Luckiest Guy",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #3EC3D5;
+    display: inline-block;
+    color: #FFF;
+    padding: 14px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 999;
+    border-bottom: 5px solid #00A0D1;
+}
+
+#PopupParent{
+   position: absolute;
+   z-index: 10;
+   background-color: #272727;
+   border: 2px solid #ffffff;
+   border-radius: 8px;
+   top: 10px;
+   left: 50%;
+   margin-left: -250px;
+   z-index: 100;
+    font-family: "Luckiest Guy",sans-serif;
+}
+
+.popupHeading{
+    color: #e11a51;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    float: left;
+padding:10px
+}
+
+#downloadOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.5;
+    z-index: 99;
+}
+#download_btn{
+    cursor: pointer;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -100px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-family: "Luckiest Guy",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #FABA2D;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 999;
+    border-bottom: 5px solid #FAAF40;
+-webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#download_btn a{
+    color: #fff;
+text-decoration: none;
+}
+
+#download_btn:hover{
+
+}
+
+.closeImage{
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/////////////////////////////////////////
+
+//////////////////////////////////////////////
