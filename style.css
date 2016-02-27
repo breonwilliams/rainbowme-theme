@@ -13,12 +13,12 @@ This theme built with Twitter Bootstrap v.3. It is basic theme with basic style 
 
 */
 
-.home a.btn-default {
-padding: 15px;
+.home a.btn-default, .home a.btn-primary {
+    padding: 15px;
 }
 
 .page-template-page-splashpage #video-container {
-opacity: .2;
+    opacity: .2;
 }
 
 .page-template-page-splashpage .header-unit {
@@ -33,14 +33,14 @@ opacity: .2;
 Required WordPress CSS
 */
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
 .bypostauthor {
 }
@@ -49,67 +49,67 @@ Required WordPress CSS
 .sticky {
 }
 .wp-caption {
-	border: 1px solid #ccc;
-	margin-bottom: 1.5em;
-	max-width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    max-width: 100%;
 }
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 1.2% auto 0;
-	max-width: 98%;
+    display: block;
+    margin: 1.2% auto 0;
+    max-width: 98%;
 }
 .wp-caption-text {
-	text-align: center;
+    text-align: center;
 }
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+    margin: 0.8075em 0;
 }
 
 /*---CUSTOM CSS---*/
 
 .page-template-page-splashpage .site-content {
-	padding: 0 0;
+    padding: 0 0;
 }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
- @media screen and (max-width: 768px) {
- .royalSlider,
- .rsOverflow {
-   height: 420px !important; // force 400px height
- }
+@media screen and (max-width: 768px) {
+    .royalSlider,
+    .rsOverflow {
+        height: 420px !important; // force 400px height
+    }
 }
 
- @media screen and (max-width: 400px) {
-.royalSlider .lead {
-  font-size: 22px;
-}
+@media screen and (max-width: 400px) {
+    .royalSlider .lead {
+        font-size: 22px;
+    }
 }
 
 /*---NEWSLETTER---*/
 
 .newsletter-inputgroup {
-  display: block;
+    display: block;
 }
 
 .newsletter-subscription .newsletter-firstname, .newsletter-subscription .newsletter-lastname, .newsletter-subscription .newsletter-email {
-  border-radius: 3px;
-  border: solid 1px #eee;
-  height: 34px;
-  margin: 15px;
+    border-radius: 3px;
+    border: solid 1px #eee;
+    height: 34px;
+    margin: 15px;
 }
 
 .newsletter-subscription .newsletter-submit {
-  background: #E8615B;
-  border: 1px solid #E8615B;
-  color: #fff;
-  padding: 8px 15px;
-  margin: 15px 0;
-  border-radius: 3px;
+    background: #E8615B;
+    border: 1px solid #E8615B;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 15px 0;
+    border-radius: 3px;
 }
 
 .news_item .entry-content {
-  padding: 20px 0;
+    padding: 20px 0;
 }
