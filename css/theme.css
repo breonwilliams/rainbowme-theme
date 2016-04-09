@@ -453,3 +453,23 @@ a,
     letter-spacing: 2px;
     font-weight: 300;
 }
+
+/*--- TABS---*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #2f92a0;
+    border: 1px solid ##2f92a0;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #2f92a0;
+    background: transparent;
+    color: #2f92a0;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #2f92a0;
+}
