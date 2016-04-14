@@ -147,10 +147,8 @@ img.aligncenter {
 }
 
 #main-column .post .entry-header .entry-meta {
-	color: #fff;
 }
 #main-column .post .entry-header .entry-meta a {
-	color: inherit;
 }
 #main-column .post .entry-header .entry-meta .posted-on .updated {
 	display: none;
@@ -159,11 +157,9 @@ img.aligncenter {
 	cursor: default;
 }
 #main-column .post .entry-meta .comments-link a {
-	color: #333;
 }
 #main-column .post .entry-meta .comments-link a .comment-icon .comment-total,
 #main-column .page .entry-meta .comments-link a .comment-icon .comment-total {
-	color: #555;
 	font-size: 12px;
 	margin-left: 5px;
 }
@@ -171,7 +167,6 @@ img.aligncenter {
 #main-column .attachment .entry-meta .edit-post-link a, 
 #main-column .post .entry-meta .edit-post-link a,
 #main-column .page .entry-meta .edit-post-link a {
-	color: #333;
 }
 #main-column .post .entry-meta .tags-icon {
 	cursor: default;

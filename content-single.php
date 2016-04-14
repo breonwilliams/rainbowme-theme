@@ -1,6 +1,5 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('news_itemfull'); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<?php bootstrapBasicPostOn(); ?> 
