@@ -4,16 +4,15 @@
 
 					<figure>
 
-<?php
-    if(has_post_thumbnail()) { ?>
+<?php if(has_post_thumbnail()): ?>
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'videos-thumb' ); ?></a>
-    <?php } else { ?>
+    <?php else: ?>
     <div class="staff-img">
 <a href="<?php the_permalink(); ?>"><?php echo '<img src="' . get_stylesheet_directory_uri() . '/img/nophoto.jpg" />'; ?></a>
 
 
 </div>
-    <?php } ?>
+    <?php endif; ?>
 
 						<figcaption>
 							<h6><?php the_title(); ?></h6>

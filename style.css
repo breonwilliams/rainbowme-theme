@@ -110,6 +110,10 @@ Required WordPress CSS
     border-radius: 3px;
 }
 
-.news_item .entry-content {
-    padding: 20px 0;
+.news_item .entry-content, .news_itemfull .entry-content {
+    padding: 10px 0;
+}
+
+.news_item .entry-header, .news_itemfull .entry-header {
+    padding: 0 0 10px;
 }

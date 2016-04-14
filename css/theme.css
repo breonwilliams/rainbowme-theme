@@ -441,13 +441,31 @@ a,
 
 /*---BLOG POSTS---*/
 
-.news_item {
+@media screen and (min-width: 767px) {
+    .news_item .blog-featimg {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    .news_item {
+        min-height: 350px;
+        padding: 20px 300px 20px 0px!important;
+    }
+}
+
+.news_item .blog-featimg img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.news_item, .news_itemfull {
     border-bottom: solid 1px #8bdbe6;
     clear: both;
     padding: 20px 0px;
+    position: relative;
 }
 
-.news_item .entry-meta {
+.news_item .entry-meta, .news_itemfull .entry-meta {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;

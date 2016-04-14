@@ -1,7 +1,13 @@
-<article id="post-<?php the_ID(); ?>" class="news_item">
+<?php if(has_post_thumbnail()): ?>
+	<article id="post-<?php the_ID(); ?>" class="news_item">
+<?php else: ?>
+	<article id="post-<?php the_ID(); ?>" class="news_itemfull">
+<?php endif; ?>
+
+
 
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		<?php if ('post' == get_post_type()) { ?> 
 		<div class="entry-meta">
@@ -10,6 +16,11 @@
 		<?php } //endif; ?> 
 	</header><!-- .entry-header -->
 
+	<?php if(has_post_thumbnail()): ?>
+		<a class="blog-featimg" href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'article_thumbnail' ); ?></a>
+	<?php else: ?>
+
+	<?php endif; ?>
 	
 	
 	<div class="entry-content">

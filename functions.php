@@ -250,6 +250,13 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
 }
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');
 
+/** Thumbnails **/
+
+if ( function_exists( 'add_theme_support' ) ) {
+	add_image_size( 'article_thumbnail', 280, 280, true ); // Posts thumnail
+
+}
+
 
 if (!function_exists('bootstrapBasicEnqueueScripts')) {
 	/**
