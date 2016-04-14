@@ -478,8 +478,7 @@ a,
     color: #fff;
     cursor: default;
     background-color: #2f92a0;
-    border: 1px solid ##2f92a0;
-    border-bottom-color: transparent;
+    border: solid 1px #2f92a0;
 }
 
 .nav-tabs>li>a:hover {
