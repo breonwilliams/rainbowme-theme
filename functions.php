@@ -60,6 +60,11 @@ if (!function_exists('bootstrapBasicSetup')) {
 }
 add_action('after_setup_theme', 'bootstrapBasicSetup');
 
+// disable buddypress cover image
+
+add_filter( 'bp_is_profile_cover_image_active', '__return_false' );
+add_filter( 'bp_is_groups_cover_image_active', '__return_false' );
+
 // avatar
 add_filter( 'avatar_defaults', 'newgravatar' );
 function newgravatar ($avatar_defaults) {
