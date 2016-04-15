@@ -186,18 +186,7 @@ background: #fff;
 
 
 .styleBtn:hover, .resetBtn:hover, .finishBtn:hover, .downloadBtn:hover {
-    font-family: "Luckiest Guy",sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 1px;
-    line-height: 1;
-    text-transform: uppercase;
     background-color: #3EC3D5;
-    display: inline-block;
-    color: #FFF;
-    padding: 14px;
-    margin: 0px;
     cursor: pointer;
     z-index: 999;
     border-bottom: 5px solid #00A0D1;
