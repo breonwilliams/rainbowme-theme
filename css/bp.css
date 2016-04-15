@@ -524,6 +524,9 @@ opacity: 1;
 margin-top: 10px;
 }
 
+#buddypress table.forum tr td.label, #buddypress table.messages-notices tr td.label, #buddypress table.notifications tr td.label, #buddypress table.notifications-settings tr td.label, #buddypress table.profile-fields tr td.label, #buddypress table.wp-profile-fields tr td.label {
+	color: #2f92a0;
+}
 
 /*-------------------------------------------------------------------------
 3.8 - Headers, Lists and Tabs - Activity, Groups, Blogs, Forums, Profiles
