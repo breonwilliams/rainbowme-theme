@@ -60,6 +60,12 @@ if (!function_exists('bootstrapBasicSetup')) {
 }
 add_action('after_setup_theme', 'bootstrapBasicSetup');
 
+add_filter( 'avatar_defaults', 'newgravatar' );
+function newgravatar ($avatar_defaults) {
+	$myavatar = get_bloginfo('template_directory') . '/img/avatar.png';
+	$avatar_defaults[$myavatar] = "RainbowMe Avatar";
+	return $avatar_defaults;
+}
 
 if (!function_exists('bootstrapBasicWidgetsInit')) {
 	/**
