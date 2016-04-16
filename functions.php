@@ -398,6 +398,7 @@ require get_template_directory() . '/inc/findfriends.php';
 require get_template_directory() . '/inc/fb-connect.php';
 require get_template_directory() . '/inc/logo.php';
 require get_template_directory() . '/inc/donate-filter.php';
+require get_template_directory() . '/inc/send-email.php';
 
 /*--- Custom Function ---*/
 
