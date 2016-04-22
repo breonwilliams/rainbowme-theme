@@ -1,7 +1,7 @@
 <?php
 /**
  * Template for displaying login panel
- * 
+ *
  * @package bootstrap-basic
  */
 ?>
@@ -17,7 +17,7 @@
             <?php
         }
             if (is_user_logged_in()) {
-                echo '<div class="pull-left">', bp_loggedin_user_avatar( 'type=thumb&width=50&height=50' ), '</div> <div class="bp-user-link pull-left">' ,bp_core_get_userlink( bp_loggedin_user_id() ), '</div><a id="wp-submit" class="btn btn-primary btn-lg pull-right" href="', wp_logout_url(), '" title="Logout">Logout</a>';
+                echo '<div class="pull-left">', bp_loggedin_user_avatar( 'type=thumb&width=50&height=50' ), '</div> <div class="bp-user-link pull-left">' ,bp_core_get_userlink( bp_loggedin_user_id() ), '</div><a id="wp-submit" class="btn btn-primary btn-lg pull-right" href="', wp_logout_url(), '" title="Logout">Logout</a> <span class="notif"><i class="fa fa-bell fa-lg" aria-hidden="true"></i><a class="notif-count" href="', bp_core_get_user_domain(bp_loggedin_user_id()) ,'notifications"><span class="badge">', cg_current_user_notification_count() ,'</span></a></span>';
             } else { ?>
 
           <div class="pull-right">
@@ -44,7 +44,7 @@
 
                       $args = array(
                                 'echo'           => true,
-                                'redirect'       => home_url('/wp-admin/'), 
+                                'redirect'       => home_url('/wp-admin/'),
                                 'form_id'        => 'loginform',
                                 'label_username' => __( 'Username' ),
                                 'label_password' => __( 'Password' ),
@@ -77,6 +77,6 @@
 
             }
 
-        ?> 
+        ?>
 
 </div>

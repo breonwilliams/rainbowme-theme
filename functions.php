@@ -405,4 +405,9 @@ require get_template_directory() . '/inc/send-email.php';
 require_once locate_template('/inc/redirecthome.php');                          // Redirect to home page
 
 
+function cg_current_user_notification_count() {
+	$notifications = bp_core_get_notifications_for_user(bp_loggedin_user_id(), 'object');
+	$count = !empty($notifications) ? count($notifications) : 0;
 
+	echo $count;
+}

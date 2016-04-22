@@ -492,6 +492,37 @@ a,
 }
 
 /*
+Badge
+================================== */
+.notif .badge {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #00B4CC;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    right: -30px;
+}
+
+.notif {
+    padding: 15px 0 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.notif .fa-bell {
+    color: #FABA2C;;
+}
+
+/*
 Accordion
 ================================== */
 .panel-group .panel {
