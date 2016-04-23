@@ -28,7 +28,9 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			$args = array(
 				'paged' => $paged,
 				'posts_per_page' => -1,
-				'post_type' => 'videos'
+				'post_type' => 'videos',
+				'orderby'=>'menu_order',
+				'order'=>'ASC'
 			);
 			query_posts($args);
 	if ( have_posts() ) : while ( have_posts() ) : the_post();

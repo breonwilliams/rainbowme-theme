@@ -61,10 +61,20 @@ body, html { font-size: 100%; padding: 0;}
 	overflow: hidden;
 }
 
+.item.slick-slide figure {
+	margin: 10px!important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 .cs-style-3 figure img {
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .no-touch .cs-style-3 figure:hover img,
@@ -88,6 +98,9 @@ body, html { font-size: 100%; padding: 0;}
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 	transition: transform 0.4s, opacity 0.1s 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .no-touch .cs-style-3 figure:hover figcaption,
