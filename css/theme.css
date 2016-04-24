@@ -439,6 +439,12 @@ a,
     border-radius: 50%;
 }
 
+.thumbnail, .img-thumbnail {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
 /*---BLOG POSTS---*/
 
 @media screen and (min-width: 767px) {
@@ -507,9 +513,6 @@ Badge
     vertical-align: baseline;
     background-color: #00B4CC;
     border-radius: 50%;
-    position: absolute;
-    top: 11px;
-    right: -30px;
 }
 
 .notif {
@@ -518,9 +521,43 @@ Badge
     position: relative;
 }
 
+.notif a {
+    padding-left: 5px;
+}
+
 .notif .fa-bell {
     color: #FABA2C;;
 }
+
+/*
+Tooltip
+=========================== */
+
+.tooltip {
+    font-size: 14px
+}
+.tooltip-inner {
+    color: #fff;
+    background-color: #FABA2C;
+    padding: 5px 12px 5px;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: #FABA2C
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #FABA2C;
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: #FABA2C
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+    border-bottom-color: #FABA2C;
+}
+
 
 /*
 Accordion

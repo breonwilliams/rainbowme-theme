@@ -17,7 +17,7 @@
             <?php
         }
             if (is_user_logged_in()) {
-                echo '<div class="pull-left">', bp_loggedin_user_avatar( 'type=thumb&width=50&height=50' ), '</div> <div class="bp-user-link pull-left">' ,bp_core_get_userlink( bp_loggedin_user_id() ), '</div><a id="wp-submit" class="btn btn-primary btn-lg pull-right" href="', wp_logout_url(), '" title="Logout">Logout</a> <span class="notif"><i class="fa fa-bell fa-lg" aria-hidden="true"></i><a class="notif-count" href="', bp_core_get_user_domain(bp_loggedin_user_id()) ,'notifications"><span class="badge">', cg_current_user_notification_count() ,'</span></a></span>';
+                echo '<div class="pull-left">', bp_loggedin_user_avatar( 'type=thumb&width=50&height=50' ), '</div> <div class="bp-user-link pull-left">' ,bp_core_get_userlink( bp_loggedin_user_id() ), '</div><a id="wp-submit" class="btn btn-primary btn-lg pull-right" href="', wp_logout_url(), '" title="Logout">Logout</a> <span class="notif"><i class="fa fa-bell fa-lg" aria-hidden="true"></i><a data-rel="tooltip" data-placement="right" rel="tooltip" data-original-title="Notifications" class="notif-count" href="', bp_core_get_user_domain(bp_loggedin_user_id()) ,'notifications"><span class="badge">', cg_current_user_notification_count() ,'</span></a></span>';
             } else { ?>
 
           <div class="pull-right">

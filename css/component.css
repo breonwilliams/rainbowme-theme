@@ -59,6 +59,7 @@ body, html { font-size: 100%; padding: 0;}
 /* Caption Style 3 */
 .cs-style-3 figure {
 	overflow: hidden;
+	border-radius: 3px;
 }
 
 .item.slick-slide figure {
