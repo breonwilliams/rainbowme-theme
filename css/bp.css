@@ -585,6 +585,11 @@ body.activity-permalink #buddypress ul.item-list li .activity-avatar img.avatar 
 	height: auto;
 }
 
+#buddypress div.activity-comments div.acomment-avatar img {
+	height: auto!important;
+	width: 25px;
+}
+
 .content #buddypress ul.item-list {
 	border-top-width: 1px;
 	border-top-style: solid;
