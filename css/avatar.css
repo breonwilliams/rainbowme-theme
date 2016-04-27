@@ -1,0 +1,10 @@
+#wrapperContents:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#wrapperContents {
+    margin: auto;
+    max-width: 710px;
+}
