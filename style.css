@@ -13,7 +13,7 @@ This theme built with Twitter Bootstrap v.3. It is basic theme with basic style 
 
 */
 
-.home a.btn-default, .home a.btn-primary {
+.page-template-page-splashpage a.btn-default, .page-template-page-splashpage a.btn-primary {
     padding: 15px;
 }
 
