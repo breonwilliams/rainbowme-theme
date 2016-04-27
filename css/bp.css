@@ -70,6 +70,10 @@ select:focus {
 	outline: none;
 }
 
+.searchandfilter label {
+	width: 100%;
+}
+
 select {
 	max-width: 100%;
 	padding: 13px 40px 13px 15px;
