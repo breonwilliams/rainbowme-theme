@@ -26,8 +26,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6">
 					<p> &copy; <?php echo date( 'Y' ); ?> Rainbow Me</p>
+					</div>
+					<div class="col-md-6">
+						<?php wp_nav_menu(array('theme_location' => 'footer', 'container' => false, 'items_wrap' => '<ul class="foot-menu">%3$s</ul>')); ?>
 					</div>
 				</div>
 			</div>

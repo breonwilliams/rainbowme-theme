@@ -42,6 +42,10 @@ if (!function_exists('bootstrapBasicSetup')) {
 			'primary' => __('Primary Menu', 'bootstrap-basic'),
 		));
 
+		register_nav_menus(array(
+			'footer' => __('Footer Menu', 'bootstrap-basic'),
+		));
+
 		// add post formats support
 		add_theme_support('post-formats', array('aside', 'image', 'video', 'quote', 'link'));
 

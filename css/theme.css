@@ -665,3 +665,18 @@ Accordion
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
+
+.foot-menu {
+    margin: 5px 0 ;
+    padding: 0;
+    float: right;
+}
+
+.foot-menu li {
+    list-style: none;
+    float: left;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
