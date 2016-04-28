@@ -408,10 +408,25 @@ require get_template_directory() . '/inc/send-email.php';
 
 require_once locate_template('/inc/redirecthome.php');                          // Redirect to home page
 
-
+// BP Notification Count
 function cg_current_user_notification_count() {
 	$notifications = bp_core_get_notifications_for_user(bp_loggedin_user_id(), 'object');
 	$count = !empty($notifications) ? count($notifications) : 0;
 
 	echo $count;
+}
+
+// BP Custom Menu Item
+add_action('bp_setup_nav', 'mb_bp_profile_menu_posts', 301 );
+function mb_bp_profile_menu_posts() {
+	global $bp;
+	bp_core_new_nav_item(
+		array(
+			'name' => 'Create Your Avatar',
+			'slug' => 'profile/change-avatar',
+			'position' => 1,
+			'default_subnav_slug' => 'published', // We add this submenu item below
+			'screen_function' => 'mb_author_posts'
+		)
+	);
 }
