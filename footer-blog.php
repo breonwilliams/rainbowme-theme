@@ -35,7 +35,6 @@
 				</div>
 			</div>
 			</footer>
-<?php do_action('footer_infolinks'); ?>
 		<!--wordpress footer-->
 		<?php wp_footer(); ?> 
 	</body>
