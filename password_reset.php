@@ -1,5 +1,4 @@
 <?php /* Template Name: Custom WordPress Password Reset */  ?>
-
 <?php get_header(); ?>
 <section class="container">
     <div class="row">

@@ -1,5 +1,4 @@
 <?php /* Template Name: Splash Page */  ?>
-
 <?php
 /**
  * Template for displaying pages

@@ -1,5 +1,4 @@
 <?php /* Template Name: RM Login Page */  ?>
-
 <?php get_header(); ?>
 <section class="container">
     <div class="row">

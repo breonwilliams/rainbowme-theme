@@ -1,5 +1,4 @@
 <?php /* Template Name: Home Page */  ?>
-
 <?php
 /**
  * Template for displaying pages
