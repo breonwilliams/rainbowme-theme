@@ -10,15 +10,10 @@
 
         if(isset($_GET['login']) && $_GET['login'] == 'failed')
         {
-            ?>
-	            <div class="aa_error">
-
-                    <div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> FAILED: Try again!
-</div>
-	            </div>
-            <?php
+            if (is_user_logged_in()) {}
+            else { echo '<div class="aa_error"><div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<strong>Warning!</strong> FAILED: Try again!</div>
+	            </div>'; }
         }
             if (is_user_logged_in()) {
                 echo '<a id="wp-submit" class="btn btn-primary btn-md" href="', wp_logout_url(), '" title="Logout">Logout</a>';
