@@ -406,7 +406,6 @@ require get_template_directory() . '/inc/send-email.php';
 
 /*--- Custom Function ---*/
 
-require_once locate_template('/inc/redirecthome.php');                          // Redirect to home page
 
 // BP Notification Count
 function cg_current_user_notification_count() {
