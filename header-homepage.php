@@ -53,8 +53,7 @@
 							</div>
 							
 							<div class="collapse navbar-collapse navbar-primary-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
-								<?php dynamic_sidebar('navbar-right'); ?> 
+								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
 							</div><!--.navbar-collapse-->
 							</div>
 						</nav>
