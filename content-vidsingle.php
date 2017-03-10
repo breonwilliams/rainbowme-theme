@@ -11,7 +11,7 @@
 		<div class="entry-content">
 			<?php the_content(bootstrapBasicMoreLinkText()); ?>
 
-			
+
 
 			<div class="clearfix"></div>
 			<?php
