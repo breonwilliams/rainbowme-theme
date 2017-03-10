@@ -11,39 +11,7 @@
 		<div class="entry-content">
 			<?php the_content(bootstrapBasicMoreLinkText()); ?>
 
-			<?php
-
-			// check if the repeater field has rows of data
-			if( have_rows('videos') ):
-			?><?php ?><ul class="popup-listwrap"><?php
-				// loop through the rows of data
-				while ( have_rows('videos') ) : the_row();
-
-
-					?>
-					<li>
-						<a href="<?php the_sub_field('video_url'); ?>" data-lity>
-							<div class="row">
-								<div class="col-xs-4">
-									<img src="<?php the_sub_field('video_image'); ?>" alt="<?php the_sub_field('video_title'); ?>">
-								</div>
-								<div class="col-xs-8">
-									<h3><?php the_sub_field('video_title'); ?></h3>
-									<?php the_sub_field('video_description'); ?>
-								</div>
-							</div>
-						</a>
-					</li>
-					<?php
-				endwhile;
-				?><?php ?></ul><?php
-			else :
-
-				// no rows found
-
-			endif;
-
-			?>
+			
 
 			<div class="clearfix"></div>
 			<?php
