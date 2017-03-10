@@ -22,7 +22,7 @@
             } else { ?>
 
                 <div class="pull-right">
-                    
+
                     <?php dynamic_sidebar('navbar-right'); ?>
 
                 </div>
